@@ -7,7 +7,10 @@ import ToggleButton from './components/ToggleButton';
 import Address from './components/Address';
 import ImageSlider from './components/ImageSlider';
 import Bomb from './components/Bomb';
+import Product from './components/Product';
 import Tickler from './components/Tickler';
+import Keypad from './components/Keypad';
+import EyesOnMe from './components/EyesOnMe';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
@@ -42,16 +45,26 @@ function tick() {
 		<Bomb />,
 		document.getElementById('root5')
 	);
-
-	// ReactDOM.render(
-	// 	<ProductTable products={PRODUCTS} />,
-	// 	document.getElementById('container')
-	// );
 	
 	ReactDOM.render(
 		<Tickler />,
 		document.getElementById('root8')
 	);
+	
+	ReactDOM.render(
+		<Keypad />,
+		document.getElementById('root9')
+	);
+	
+	ReactDOM.render(
+		<EyesOnMe />,
+		document.getElementById('root10')
+	);
+
+
+
+
+
 }
 
 setInterval(tick, 1500);
