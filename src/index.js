@@ -7,6 +7,7 @@ import ToggleButton from './components/ToggleButton';
 import Address from './components/Address';
 import ImageSlider from './components/ImageSlider';
 import Bomb from './components/Bomb';
+import Tickler from './components/Tickler';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
@@ -42,9 +43,14 @@ function tick() {
 		document.getElementById('root5')
 	);
 
+	// ReactDOM.render(
+	// 	<ProductTable products={PRODUCTS} />,
+	// 	document.getElementById('container')
+	// );
+	
 	ReactDOM.render(
-		<ProductTable products={PRODUCTS} />,
-		document.getElementById('container')
+		<Tickler />,
+		document.getElementById('root8')
 	);
 }
 
