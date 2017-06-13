@@ -11,6 +11,7 @@ import Product from './components/Product';
 import Tickler from './components/Tickler';
 import Keypad from './components/Keypad';
 import EyesOnMe from './components/EyesOnMe';
+import Clicker from './components/SyntheticEvent';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
@@ -60,11 +61,11 @@ function tick() {
 		<EyesOnMe />,
 		document.getElementById('root10')
 	);
-
-
-
-
-
+	
+	ReactDOM.render(
+		<Clicker />,
+		document.getElementById('root11')
+	);
 }
 
 setInterval(tick, 1500);
