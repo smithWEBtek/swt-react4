@@ -17,6 +17,9 @@ import YouTubeDebugger from './components/YouTubeDebugger';
 import ControlledInput from './components/ControlledInput';
 import EssayForm from './components/EssayForm';
 import FlavorForm from './components/FlavorForm';
+import TwitterMessage from './components/TwitterMessage';
+import LoginForm from './components/LoginForm';
+import PoemWriter from './components/PoemWriter';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
@@ -95,6 +98,21 @@ function tick() {
 	ReactDOM.render(
 		<FlavorForm />,
 		document.getElementById('root16')
+	);
+	
+	ReactDOM.render(
+		<TwitterMessage />,
+		document.getElementById('root17')
+	);
+	
+	ReactDOM.render(
+		<LoginForm />,
+		document.getElementById('root18')
+	);
+	
+	ReactDOM.render(
+		<PoemWriter />,
+		document.getElementById('root19')
 	);
 }
 
