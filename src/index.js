@@ -12,6 +12,11 @@ import Tickler from './components/Tickler';
 import Keypad from './components/Keypad';
 import EyesOnMe from './components/EyesOnMe';
 import Clicker from './components/SyntheticEvent';
+import DigitalClicker from './components/DigitalClicker';
+import YouTubeDebugger from './components/YouTubeDebugger';
+import ControlledInput from './components/ControlledInput';
+import EssayForm from './components/EssayForm';
+import FlavorForm from './components/FlavorForm';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
@@ -46,7 +51,7 @@ function tick() {
 		<Bomb />,
 		document.getElementById('root5')
 	);
-	
+		
 	ReactDOM.render(
 		<Tickler />,
 		document.getElementById('root8')
@@ -65,6 +70,31 @@ function tick() {
 	ReactDOM.render(
 		<Clicker />,
 		document.getElementById('root11')
+	);
+	
+	ReactDOM.render(
+		<DigitalClicker />,
+		document.getElementById('root12')
+	);
+	
+	ReactDOM.render(
+		<YouTubeDebugger />,
+		document.getElementById('root13')
+	);
+	
+	ReactDOM.render(
+		<ControlledInput />,
+		document.getElementById('root14')
+	);
+	
+	ReactDOM.render(
+		<EssayForm />,
+		document.getElementById('root15')
+	);
+	
+	ReactDOM.render(
+		<FlavorForm />,
+		document.getElementById('root16')
 	);
 }
 
